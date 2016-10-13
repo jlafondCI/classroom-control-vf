@@ -41,7 +41,7 @@ ini_setting { 'random ordering':
 node default {
   # This is where you can declare classes for all nodes.
   # Example:
-   class { 'my_class': }
+  # class { 'my_class': }
   #include role::classroom
 #file { '/etc/motd':
 #nsure => file,
@@ -53,6 +53,6 @@ node default {
 #exec { "cowsay 'Welcome to ${::fqdn}!' > /etc/motd":
 #path => '/usr/bin:/usr/local/bin',
 #creates =>'/etc/motd',
-}
+#}
 #include skeleton
 }
